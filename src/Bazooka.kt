@@ -1,9 +1,8 @@
-class Pistola(municion:Int,radio: RADIO, tipoDeMunicion:String ):ArmaDeFuego(daño = (1..5).random(), radio, "Pistola", municion, 1, tipoDeMunicion){
+class Bazooka(municion:Int,radio: RADIO, tipoDeMunicion:String ):ArmaDeFuego(daño = (10..30).random(), radio, "Bazooka", municion, 3, tipoDeMunicion) {
 
     init {
         //require(RADIO = RADIO.Corto)
     }
-
     override fun dispara(): String {
         return super.dispara()
     }

@@ -8,8 +8,9 @@ enum class RADIO{
 }
 
 
-open class ArmaDeFuego(val daño:Int,
-                  val radio:RADIO,
+open class ArmaDeFuego(
+                   var daño:Int,
+                   val radio:RADIO,
                   private val nombre:String ,
                   private var municion:Int ,
                   private val municionARestar:Int, //Si es una pistola que quite 1 si es otro arma que quite otro
